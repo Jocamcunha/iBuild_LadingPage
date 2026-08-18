@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>iBuild — Construa mais. Desperdice menos.</title>
+<meta name="description" content="O ecossistema digital que conecta proprietários, profissionais e fornecedores de materiais na construção civil." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <img src="logo.png" style="width: 15%; height: 10%;"/>
+
+    <div class="nav-links">
+      <button class="nav-link" data-scroll="#sobre">Sobre</button>
+      <button class="nav-link" data-scroll="#projeto">O Projeto</button>
+      <button class="nav-link" data-scroll="#equipe">Equipe</button>
+      <button class="nav-link" data-scroll="#tcc">TCC</button>
+      <button class="nav-link" data-scroll="#contato">Contato</button>
+      <button class="btn-primary" data-scroll="#contato">Fale Conosco</button>
+    </div>
+
+    <button class="nav-hamburger" id="hamburger-btn" aria-label="Abrir menu">
+      <i data-lucide="menu" id="menu-icon"></i>
+      <i data-lucide="x" id="close-icon" style="display:none;"></i>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-link" data-scroll="#sobre">Sobre</button>
+    <button class="mobile-link" data-scroll="#projeto">O Projeto</button>
+    <button class="mobile-link" data-scroll="#equipe">Equipe</button>
+    <button class="mobile-link" data-scroll="#tcc">TCC</button>
+    <button class="mobile-link" data-scroll="#contato">Contato</button>
+    <button class="mobile-cta" data-scroll="#contato">Fale Conosco</button>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-bg-img">
+    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&h=900&fit=crop&auto=format" alt="Canteiro de obras moderno" />
+    <div class="hero-bg-overlay"></div>
+  </div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
+
+  <div class="hero-content">
+    <div>
+      <div class="badge badge-orange flex items-center" style="display:inline-flex;">
+        <span class="badge-dot"></span>
+        Trabalho de Conclusão de Curso — 2026
+      </div>
+
+      <h1 class="hero-h1">
+        Construa mais.<br />
+        <span class="accent">Desperdice</span><br />
+        menos.
+      </h1>
+
+      <p class="hero-p">
+        O <strong>iBuild</strong> é o ecossistema digital que conecta proprietários, profissionais e fornecedores de materiais em um único lugar — com marketplace de economia circular, pagamento seguro e verificação de identidade.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="btn-large" data-scroll="#tcc">Baixar o Projeto</button>
+        <button class="btn-outline" data-scroll="#projeto">Conhecer o iBuild</button>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <div class="stat-value">3</div>
+          <div class="stat-label">Perfis de usuário</div>
+        </div>
+        <div>
+          <div class="stat-value">Escrow</div>
+          <div class="stat-label">Pagamento garantido</div>
+        </div>
+        <div>
+          <div class="stat-value">100%</div>
+          <div class="stat-label">Economia circular</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-visual-card">
+        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=700&h=520&fit=crop&auto=format" alt="App de construção digital" />
+        <div class="hero-visual-fade"></div>
+      </div>
+
+      <div class="float-badge float-badge-1">
+        <i data-lucide="shield-check" style="color:#F97316;" size="20"></i>
+        <div>
+          <div class="float-badge-title">Verificação</div>
+          <div class="float-badge-value">Biométrica + Doc.</div>
+        </div>
+      </div>
+
+      <div class="float-badge float-badge-2">
+        <i data-lucide="recycle" style="color:#22C55E;" size="20"></i>
+        <div>
+          <div class="float-badge-title">Marketplace</div>
+          <div class="float-badge-value">Sobras qualificadas</div>
+        </div>
+      </div>
+
+      <div class="float-badge float-badge-3">
+        <i data-lucide="users" style="color:#60A5FA;" size="20"></i>
+        <div>
+          <div class="float-badge-title">Profissionais</div>
+          <div class="float-badge-value">Pedreiros, elétricos…</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="hero-scroll-btn" data-scroll="#sobre" aria-label="Rolar para baixo">
+    <i data-lucide="arrow-down" size="20"></i>
+  </button>
+</section>
+
+<!-- ============ MISSION / VISION / VALUES ============ -->
+<section id="sobre" class="section" style="background:#0A0F1A;">
+  <div class="container">
+    <div style="margin-bottom:4rem;">
+      <div class="badge badge-orange">Nossa Essência</div>
+      <h2 class="h2-title">O que nos move</h2>
+    </div>
+
+    <div class="mvv-grid">
+      <div class="mvv-card">
+        <div class="mvv-icon" style="background:#F9731618;">
+          <i data-lucide="target" style="color:#F97316;" size="22"></i>
+        </div>
+        <div>
+          <div class="mvv-label" style="color:#F97316;">Missão</div>
+          <p class="mvv-text">Transformar o setor de reformas e construção civil por meio da tecnologia, conectando proprietários, profissionais e fornecedores para acabar com o desperdício de materiais, simplificar a gestão de obras e promover a economia circular de forma acessível e segura.
+          </p>
+        </div>
+      </div>
+
+      <div class="mvv-card">
+        <div class="mvv-icon" style="background:#60A5FA18;">
+          <i data-lucide="eye" style="color:#60A5FA;" size="22"></i>
+        </div>
+        <div>
+          <div class="mvv-label" style="color:#60A5FA;">Visão</div>
+          <p class="mvv-text">Ser o principal ecossistema digital de construção e reforma do país, transformando o setor tradicional em um modelo de referência para a economia circular e o consumo responsável.</p>
+        </div>
+      </div>
+
+      <div class="mvv-card">
+        <div class="mvv-icon" style="background:#22C55E18;">
+          <i data-lucide="heart" style="color:#22C55E;" size="22"></i>
+        </div>
+        <div>
+          <div class="mvv-label" style="color:#22C55E;">Valores</div>
+          <p class="mvv-text">Economia circular, segurança e confiança, inovação acessível, eficiência enxuta (lean) e transparência total. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT PROJECT ============ -->
+<section id="projeto" class="section" style="background:#060B14;">
+  <div class="container">
+    <div class="about-header">
+      <div>
+        <div class="badge badge-green">O Projeto</div>
+        <h2 class="h2-title">
+          O canteiro de obras<br />
+          <span class="accent">entrou na era digital</span>
+        </h2>
+      </div>
+      <div style="padding-top:2rem;">
+        <p class="about-p">O iBuild nasceu para resolver um problema real: o mercado de construção civil ainda é extremamente informal e fragmentado. Nosso aplicativo cria um ecossistema digital onde qualquer pessoa pode planejar projetos de forma inteligente — com economia, segurança e sustentabilidade como pilares.</p>
+        <p class="about-p">O grande diferencial está no marketplace de <strong>economia circular</strong>: sobras qualificadas de canteiros encontram novos usos, gerando economia para quem compra e retorno para quem vende.</p>
+      </div>
+    </div>
+
+    <div class="about-feature-img">
+      <img src="https://images.unsplash.com/photo-1590650153855-d9e808231d41?w=1400&h=360&fit=crop&auto=format" alt="Construção civil com tecnologia digital" />
+      <div class="about-feature-overlay">
+        <div class="about-feature-text">
+          Tecnologia que<br />
+          <span class="accent">respeita o canteiro</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#F9731614;"><i data-lucide="users-2" style="color:#F97316;" size="18"></i></div>
+        <div class="feature-title">Ecossistema conectado</div>
+        <p class="feature-desc">Proprietários, prestadores e fornecedores no mesmo ambiente digital. Sem intermediários, sem complicação.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#22C55E14;"><i data-lucide="recycle" style="color:#22C55E;" size="18"></i></div>
+        <div class="feature-title">Marketplace circular</div>
+        <p class="feature-desc">Compre e venda sobras qualificadas de materiais. Economize e reduza o descarte na construção civil.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#60A5FA14;"><i data-lucide="shield-check" style="color:#60A5FA;" size="18"></i></div>
+        <div class="feature-title">Verificação antifraude</div>
+        <p class="feature-desc">Biometria e validação documental garantem que prestadores possuam o Selo iBuild de confiança.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#A78BFA14;"><i data-lucide="credit-card" style="color:#A78BFA;" size="18"></i></div>
+        <div class="feature-title">Conta Garantia (Escrow)</div>
+        <p class="feature-desc">O pagamento fica retido até a confirmação de entrega e qualidade. Segurança para comprador e vendedor.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#FB923C14;"><i data-lucide="search" style="color:#FB923C;" size="18"></i></div>
+        <div class="feature-title">Busca inteligente</div>
+        <p class="feature-desc">Encontre pedreiros, eletricistas, pintores e outros profissionais autônomos próximos à sua obra.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#F472B614;"><i data-lucide="zap" style="color:#F472B6;" size="18"></i></div>
+        <div class="feature-title">Gestão de projetos</div>
+        <p class="feature-desc">Planeje reformas de forma inteligente, rápida e sem complicação diretamente pelo app.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEAM ============ -->
+<section id="equipe" class="section" style="background:#0A0F1A;">
+  <div class="container">
+    <div style="margin-bottom:4rem;">
+      <div class="badge badge-blue">Time</div>
+      <h2 class="h2-title">
+        As pessoas por trás<br />
+        <span class="accent">do iBuild</span>
+      </h2>
+    </div>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-photo-wrap">
+          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop&auto=format" alt="Lucas Ferreira" />
+          <div class="team-photo-fade"></div>
+        </div>
+        <div class="team-body">
+          <div class="team-name">Joaquim Meirelles</div>
+          <div class="team-role">Gerente de Projeto & Dev Backend</div>
+          <p class="team-bio">Responsável por coordenar os ciclos de desenvolvimento e estruturar a arquitetura de banco de dados. Garante a integridade, performance e a escalabilidade de toda a infraestrutura lógica do sistema.</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-photo-wrap">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop&auto=format" alt="Mariana Costa" />
+          <div class="team-photo-fade"></div>
+        </div>
+        <div class="team-body">
+          <div class="team-name">Hadan Ferreira</div>
+          <div class="team-role">Redator Técnico & Comunicação</div>
+          <p class="team-bio">Traduz a complexidade técnica em documentações claras, guias acessíveis e uma comunicação fluida para a equipe e usuários. Responsável por garantir que o conhecimento do projeto seja compreensível e bem estruturado.</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-photo-wrap">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop&auto=format" alt="Rafael Mendes" />
+          <div class="team-photo-fade"></div>
+        </div>
+        <div class="team-body">
+          <div class="team-name">Arthur Ribeiro</div>
+          <div class="team-role">Analista de Sistemas & Dev Full-Stack</div>
+          <p class="team-bio">Atua na ponte entre os requisitos de negócio e o código, desenvolvendo soluções completas do front ao backend. Apaixonado por transformar ideias complexas em sistemas fluidos e funcionais.</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-photo-wrap">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&auto=format" alt="Ana Beatriz Lima" />
+          <div class="team-photo-fade"></div>
+        </div>
+        <div class="team-body">
+          <div class="team-name">João Marcelo</div>
+          <div class="team-role">Designer UI/UX & Dev Front-End</div>
+          <p class="team-bio">Une o melhor do design e do código para criar interfaces impactantes e intuitivas. Responsável por traduzir a identidade visual em uma experiência de usuário rica e totalmente responsiva.</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-photo-wrap">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&auto=format" alt="Ana Beatriz Lima" />
+          <div class="team-photo-fade"></div>
+        </div>
+        <div class="team-body">
+          <div class="team-name">Kauê Santana</div>
+          <div class="team-role">Analista de Requisitos, QA & Segurança</div>
+          <p class="team-bio">Garante a excelência do produto definindo critérios rígidos de aceitação e executando testes de qualidade. Focado em blindar o sistema contra vulnerabilidades e assegurar uma aplicação livre de falhas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OTHER PROJECTS ============ -->
+<section class="section" style="background:#060B14;">
+  <div class="container">
+    <div style="margin-bottom:4rem;">
+      <div class="badge badge-purple">Portfólio</div>
+      <h2 class="h2-title">Outros projetos</h2>
+      <p style="margin-top:1rem;max-width:32rem;color:#64748B;font-size:0.95rem;line-height:1.7;">O iBuild não é o único. O time também desenvolveu outros projetos que exploram tecnologia e inovação em diferentes áreas.</p>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="https://images3.alphacoders.com/134/thumb-1920-1349543.png" alt="EcoRoute" />
+          <div class="project-img-fade"></div>
+          <div class="project-tags">
+            <span class="tag" style="background:#22C55E18;color:#22c55e;border:1px solid #22C55E30;">Simulador</span>
+            <span class="tag" style="background:#a75b253d;color:#f97316;border:1px solid #a75b253d;">Educativo</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-title-row">
+            <div class="project-name">Dreams of Utopia</div>
+            <a href="#" class="project-link"><i data-lucide="external-link" size="16"></i></a>
+          </div>
+          <p class="project-desc">Jogo de estratégia educativo para discutir sobre as dificuldades de implementar uma economia sustentável.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="https://api.aecweb.com.br/tematico/img_figuras/despoluicao$$16094.webp" alt="SkillMap" />
+          <div class="project-img-fade"></div>
+          <div class="project-tags">
+            <span class="tag" style="background:#A78BFA18;color:#f472b6;border:1px solid #A78BFA30;">Site</span>
+            <span class="tag" style="background:#a75b253d;color:#f97316;border:1px solid #a75b253d;">Educativo</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-title-row">
+            <div class="project-name">Aqua Healers</div>
+            <a href="#" class="project-link"><i data-lucide="external-link" size="16"></i></a>
+          </div>
+          <p class="project-desc">Plataforma educativa para tratar e trazer a reflexão sobre a contaminação das águas e seus efeitos na saúde dos sers vivos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TCC SECTION ============ -->
+<section id="tcc" class="section" style="background:#0A0F1A;">
+  <div class="container">
+    <div style="margin-bottom:4rem;">
+      <div class="badge badge-orange">TCC — 2024</div>
+      <h2 class="h2-title">
+        Conheça e baixe<br />
+        <span class="accent">o projeto completo</span>
+      </h2>
+    </div>
+
+    <div class="tcc-grid">
+      <div>
+        <div class="tcc-tabs" id="tcc-tabs">
+          <button class="tcc-tab active" data-tab="Resumo">Resumo</button>
+          <button class="tcc-tab" data-tab="Problema">Problema</button>
+          <button class="tcc-tab" data-tab="Solução">Solução</button>
+          <button class="tcc-tab" data-tab="Tecnologia">Tecnologia</button>
+        </div>
+
+        <div class="tcc-content">
+          <div class="tcc-content-title" id="tcc-content-title">Sobre o TCC</div>
+          <p class="tcc-content-text" id="tcc-content-text">O iBuild foi desenvolvido como Trabalho de Conclusão de Curso, com o objetivo de propor uma solução tecnológica inovadora para o setor de construção civil e reformas. O projeto abrange desde a pesquisa de mercado até a prototipação funcional do aplicativo, passando pela modelagem de negócios e arquitetura técnica.</p>
+        </div>
+
+        <div class="tcc-docs">
+          <div class="tcc-doc">
+            <div class="tcc-doc-left">
+              <i data-lucide="file-text" style="color:#F97316;" size="18"></i>
+              <span class="tcc-doc-label">Artigo completo (PDF)</span>
+            </div>
+            <div class="tcc-doc-right">
+              <span class="tcc-doc-size">2.4 MB</span>
+              <i data-lucide="download" style="color:#64748B;" size="14"></i>
+            </div>
+          </div>
+          <div class="tcc-doc">
+            <div class="tcc-doc-left">
+              <i data-lucide="book-open" style="color:#60A5FA;" size="18"></i>
+              <span class="tcc-doc-label">Slides de apresentação</span>
+            </div>
+            <div class="tcc-doc-right">
+              <span class="tcc-doc-size">8.1 MB</span>
+              <i data-lucide="download" style="color:#64748B;" size="14"></i>
+            </div>
+          </div>
+          <div class="tcc-doc">
+            <div class="tcc-doc-left">
+              <i data-lucide="smartphone" style="color:#22C55E;" size="18"></i>
+              <span class="tcc-doc-label">Protótipo interativo (Figma)</span>
+            </div>
+            <div class="tcc-doc-right">
+              <span class="tcc-doc-size">Link</span>
+              <i data-lucide="download" style="color:#64748B;" size="14"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tcc-cta-card">
+        <div class="tcc-cta-img-wrap">
+          <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&h=300&fit=crop&auto=format" alt="Mobile app construção" />
+          <div class="tcc-cta-img-overlay">
+            <div class="tcc-cta-title">
+              iBuild TCC<br />
+              <span class="accent">Edição 2024</span>
+            </div>
+          </div>
+        </div>
+        <div class="tcc-cta-body">
+          <p class="tcc-cta-text">Acesse o pacote completo com artigo, protótipo e slides de apresentação do projeto desenvolvido como TCC.</p>
+          <button class="tcc-btn-primary"><i data-lucide="download" size="18"></i>Baixar pacote completo</button>
+          <button class="tcc-btn-secondary">Ver protótipo no Figma<i data-lucide="chevron-right" size="16"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT CTA ============ -->
+<section id="contato" class="section" style="background:#060B14;">
+  <div class="container contact-grid">
+    <div>
+      <div class="badge badge-orange">Fale com a gente</div>
+      <h2 class="h2-title" style="margin-bottom:1.5rem;">
+        Tem um projeto?<br />
+        <span class="accent">Bora construir juntos.</span>
+      </h2>
+      <p class="contact-p">Entre em contato para requisitar um projeto, fechar uma parceria comercial, se cadastrar como testador no sistema iBuild, ou simplesmente para bater um papo.</p>
+
+      <div class="contact-stats">
+        <div class="contact-stat">
+          <div class="contact-stat-value">3+</div>
+          <div class="contact-stat-label">Projetos entregues</div>
+        </div>
+        <div class="contact-stat">
+          <div class="contact-stat-value">800+</div>
+          <div class="contact-stat-label">Horas de pesquisa</div>
+        </div>
+        <div class="contact-stat">
+          <div class="contact-stat-value">47</div>
+          <div class="contact-stat-label">Usuários validados</div>
+        </div>
+        <div class="contact-stat">
+          <div class="contact-stat-value">9.8</div>
+          <div class="contact-stat-label">Avaliação banca</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-card">
+      <form class="contact-form" id="contact-form">
+        <div class="form-title">Mande uma mensagem</div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label class="form-label" for="name">Nome</label>
+            <input class="form-input" id="name" required placeholder="João Silva" />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="email">E-mail</label>
+            <input class="form-input" id="email" type="email" required placeholder="joao@email.com" />
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label class="form-label" for="option">Interesse</label>
+          <select class="form-select" id="option">
+            <option>Requisitar um projeto</option>
+            <option>Fechar uma parceria</option>
+            <option>Cadastro no sistema</option>
+            <option>Outro assunto</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label class="form-label" for="message">Mensagem</label>
+          <textarea class="form-textarea" id="message" rows="4" required placeholder="Conte um pouco sobre o que você precisa..."></textarea>
+        </div>
+
+        <button type="submit" class="form-submit" id="submit-btn">
+          <i data-lucide="send" size="16"></i>
+          <span>Enviar mensagem</span>
+        </button>
+      </form>
+
+      <div class="sent-panel hidden-panel" id="sent-panel">
+        <i data-lucide="check-circle" size="48" style="color:#22C55E;"></i>
+        <div class="sent-title">Mensagem enviada!</div>
+        <p class="sent-sub">Nossa equipe entrará em contato em breve.</p>
+        <button class="sent-again" id="send-again-btn">Enviar outra mensagem</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container" style="padding-top:4rem;padding-bottom:4rem;">
+    <div class="footer-grid">
+      <div class="footer-brand-col">
+        <img src="logo.png" style="width: 50%; height: 40%;"/>
+        <p class="footer-brand-desc">O ecossistema digital que transforma o mercado de construção civil, conectando pessoas, materiais e serviços de forma inteligente e sustentável.</p>
+
+        <div class="footer-contact">
+          <div class="footer-contact-item"><i data-lucide="mail" size="13" style="color:#F97316;"></i><span>contato@ibuild.app</span></div>
+          <div class="footer-contact-item"><i data-lucide="phone" size="13" style="color:#F97316;"></i><span>+55 (11) 9 9999-0000</span></div>
+          <div class="footer-contact-item"><i data-lucide="map-pin" size="13" style="color:#F97316;"></i><span>São Paulo, SP — Brasil</span></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Produto</div>
+        <div class="footer-links">
+          <a href="#sobre" class="footer-scroll-link">Sobre o iBuild</a>
+          <a href="#sobre" class="footer-scroll-link">Funcionalidades</a>
+          <a href="#sobre" class="footer-scroll-link">Marketplace</a>
+          <a href="#sobre" class="footer-scroll-link">Segurança</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Empresa</div>
+        <div class="footer-links">
+          <a href="#sobre" class="footer-scroll-link">Nossa equipe</a>
+          <a href="#sobre" class="footer-scroll-link">Missão e Valores</a>
+          <a href="#sobre" class="footer-scroll-link">Outros projetos</a>
+          <a href="#sobre" class="footer-scroll-link">Blog</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-col-title">TCC</div>
+        <div class="footer-links">
+          <a href="#sobre" class="footer-scroll-link">Baixar artigo</a>
+          <a href="#sobre" class="footer-scroll-link">Ver protótipo</a>
+          <a href="#sobre" class="footer-scroll-link">Apresentação</a>
+          <a href="#sobre" class="footer-scroll-link">Metodologia</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 iBuild. Desenvolvido como Trabalho de Conclusão de Curso.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacidade</a>
+        <a href="#">Termos</a>
+        <a href="#">Licença</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
